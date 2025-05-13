@@ -1,0 +1,208 @@
+@use "../_setting" as s;
+
+.sliderBox--typeFullPage {
+    --easing: cubic-bezier(.2, 1, .2, 1);
+    --transition: .8s var(--easing);
+    --box-shadow: .8rem .8rem 1.2rem rgba(0, 0, 0, .05), -.8rem -.8rem 1.2rem #fff;
+    --box-shadow-hover: 1rem 1rem 1.5rem rgba(0, 0, 0, .08), -1rem -1rem 1.5rem #fff;
+    --box-shadow-inset: inset .8rem .8rem 1.2rem rgba(0, 0, 0, .05), inset -.8rem -.8rem 1.2rem #fff;
+    --box-shadow-dark: .8rem .8rem 1.2rem rgba(0, 0, 0, .1), -.8rem -.8rem 1.2rem rgba(#fff,.2);
+	.slide{
+		display:block;
+		position:relative;
+	}
+	.slide-media{
+		img{
+			width: 100%;
+		}
+	}
+	.swiper-fade{
+		.swiper-slide {
+			-webkit-transition-property: opacity, -webkit-transform !important;
+		   	transition-property: opacity, -webkit-transform !important;
+		    	transition-property: opacity, transform !important;
+		    	transition-property: opacity, transform, -webkit-transform !important;
+		    	pointer-events: none;
+		}
+		.swiper-slide-active {
+    			pointer-events: auto;
+		}
+	}
+	.swiper-pagination {
+		width:100%;
+		text-align:center;
+		z-index: 1;
+		position: absolute;
+		bottom:0.5em;
+		left:0;
+	}
+	.swiper-pagination-bullet {
+		display: inline-block;
+	    	width: 0.5em;
+	    	height: 0.5em;
+	    	cursor: pointer;
+	    	-webkit-transition: var(--transition);
+	    	transition: var(--transition);
+	    	background-color: rgba(255, 255, 255, 0.7);
+	    	border-radius:0;
+	    	opacity: var(--swiper-pagination-bullet-inactive-opacity, 0.6);
+		margin-left:0.25em;
+		margin-right:0.25em;
+		&:not(:first-child) {
+			margin-top: 0.8rem;
+		}
+	}
+	.swiper-pagination-bullet-active{
+		background: #000;
+	}
+	.swiper-button-prev{
+		width:3em;
+		height:3em;
+		z-index:1;
+		position:absolute;
+		top:50%;
+		left:2em;
+		margin-top:-1.5em;
+		cursor: pointer;
+		pointer-events:auto;
+		span{
+			width:3em;
+			height:3em;
+			background:rgba(255,255,255,.7);
+			border-radius:50%;
+			display:block;
+			position:relative;
+			text-align:center;
+			transition: var(--transition);
+			&::before{
+	                    	content: " ";
+				display:block;
+				width:1em;
+				height:1em;
+				border-top:#666 solid 2px;
+				border-left:#666 solid 2px;
+				transform: rotate(-45deg);
+				position:absolute;
+				top:1em;
+				left:1.25em;
+			}
+			&:hover{
+				background:rgba(255,255,255,1);
+			}
+			&:hover::before{
+				border-top:#000 solid 2px;
+				border-left:#000 solid 2px;
+			}
+		}
+	}
+	.swiper-button-next{
+		width:2em;
+		height:2em;
+		border-bottom:#666 solid 2px;
+		border-right:#666 solid 2px;
+		z-index:1;
+		position:absolute;
+		top:50%;
+		right:2em;
+		margin-top:-1em;
+		transform: rotate(-45deg);
+		cursor: pointer;
+		pointer-events:auto;
+		transition: var(--transition);
+		&:hover{
+			border-bottom:#000 solid 2px;
+			border-right:#000 solid 2px;
+		}
+	}
+	.slide-title {
+		font-size: 2.8rem;
+		position: absolute;
+		right: 4rem;
+		margin-left: 6rem;
+
+		font-weight: normal;
+		line-height: 1.6;
+		bottom: 15%;
+		text-align: right;
+		color: #fff;
+		@include s.media(m){
+		    	font-size: 4rem;
+			position: absolute;
+			right: 8rem;
+			margin-left: 16rem;
+		}
+	}
+	.swiper-slide[class*=-active] {
+		.slide-media img {
+		    -webkit-transition-delay: 0s;
+		            transition-delay: 0s;
+		    -webkit-transform: scale(1.05);
+		            transform: scale(1.05);
+		}
+		.slide-title {
+		    -webkit-animation: typeFullPage-fadeIn 2s 0.5s var(--easing) both;
+		            animation: typeFullPage-fadeIn 2s 0.5s var(--easing) both;
+		}
+	}
+}
+
+@-webkit-keyframes typeFullPage-fadeIn {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+      opacity: 0;
+      -webkit-filter: blur(300px);
+              filter: blur(300px);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      opacity: 1;
+      -webkit-filter: blur(0);
+              filter: blur(0);
+    }
+}
+
+@keyframes typeFullPage-fadeIn {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+      opacity: 0;
+      -webkit-filter: blur(300px);
+              filter: blur(300px);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      opacity: 1;
+      -webkit-filter: blur(0);
+              filter: blur(0);
+    }
+}
+
+
+
+
+
+#wrapper .sliderBox--typeFullPage {
+	margin-bottom:3em;
+	@include s.media(m){
+		margin-bottom:0;
+	}
+	.swiper{
+    		overflow: visible;
+	}
+	.swiper-pagination {
+		bottom:-2.3em;
+		@include s.media(m){
+			display:none;
+		}
+	}
+	.swiper-pagination-bullet {
+	    	background-color: rgba(0, 0, 0, 0.5);
+		border-radius:50%;
+	}
+	.swiper-pagination-bullet-active{
+		background: #000;
+	}
+}

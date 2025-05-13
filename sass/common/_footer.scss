@@ -1,0 +1,284 @@
+@use "../_setting" as s;
+
+#footer {
+	clear: both;
+}
+
+#wrapper .footer {
+	padding:0;
+	margin-top:0;
+}
+.footer__inner {
+	display:block;
+	width:100%;
+	background:#313131;
+	padding:3em 0 0 0;
+	clear: both;
+}
+
+.footer__groupTitle {
+	color:#FFF;
+	font-size:1.3em;
+	display:block;
+	text-align:center;
+	@include s.fontType01(Bold);
+	margin-bottom:1em;
+	@include s.media(m){
+		font-size:1.875em;
+	}
+}
+
+.footer__groupBox {
+	width:calc(100% - 1em);
+	display: grid;
+	grid-template-columns: 50% 50%;
+	gap: 1em;
+	margin-bottom:2.5em;
+}
+
+.footer__group {
+	display:block;
+	a{
+		display:block;
+		text-align:center;
+		padding:1em;
+	}
+	figure{
+		width:90%;
+		display:inline-block;
+		@include s.media(m){
+			width:17.3em;
+		}
+		img{
+			width:100%;
+		}
+	}
+	&:nth-child(1) a{
+		background:#E60606;
+		&:hover{
+			background:s.$colorType09;
+		}
+	}
+	&:nth-child(2) a{
+		background:#0057A2;
+		&:hover{
+			background:s.$colorType09;
+		}
+	}
+	&:nth-child(3) a{
+		background:#FFF;
+		&:hover{
+			background:s.$colorType09;
+		}
+	}
+	&:nth-child(4) a{
+		background:#FF7933;
+		&:hover{
+			background:s.$colorType09;
+		}
+	}
+}
+
+.footer__informationBox{
+	width:100%;
+	display:block;
+	padding-top:2em;
+	padding-bottom:3em;
+	border-top:#FFF solid 1px;
+	@include s.media(m){
+		display:flex;
+	}
+}
+
+.footer__information {
+	display:block;
+	color:#FFF;
+	img{
+		width:100%;
+	}
+	&:nth-child(1){
+		margin-bottom:2em;
+		@include s.media(m){
+			width:34%;
+			margin-bottom:0;
+		}
+	}
+	&:nth-child(2){
+		width:100%;
+		display:flex;
+		flex-wrap:wrap;
+		@include s.media(m){
+			width:27%;
+		}
+	}
+	&:nth-child(3){
+		@include s.media(m){
+			width:39%;
+		}
+	}
+}
+
+.footer__title{
+	width:100%;
+	display:flex;
+	align-items:center;
+	margin-bottom:1em;
+	span{
+		&:nth-child(1){
+			width:6em;
+			@include s.media(m){
+				width:6em;
+			}
+			img{
+				width:100%;
+			}
+		}
+	}
+	br{
+		display:none;
+		@include s.media(m){
+			display:inline;
+		}
+	}
+}
+
+.footer__address{
+	font-size:0.875em;
+	@include s.fontType01(Regular);
+	margin-bottom:2em;
+	margin-left:9em;
+	margin-top:-5em;
+	@include s.media(m){
+		margin-bottom:3em;
+	}
+}
+.footer__tel{
+	font-size:1.4em;
+	@include s.fontType04(Medium);
+	position:relative;
+	padding-left:1.3em;
+	margin-bottom:0.3em;
+	@include s.media(m){
+		font-size:1.5em;
+	}
+	span{
+		display:inline-block;
+		width:0.8em;
+		position:absolute;
+		top:50%;
+		left:0;
+		margin-top:-0.4em;
+	}
+}
+.footer__time{
+	@include s.fontType01(Bold);
+	position:relative;
+	padding-left:2em;
+	margin-bottom:0.3em;
+	span{
+		display:inline-block;
+		width:1.2em;
+		position:absolute;
+		top:50%;
+		left:0;
+		margin-top:-0.4em;
+	}
+	b{
+		@include s.fontType04(Medium);
+		font-size:1.3em;
+		@include s.media(m){
+			font-size:1.5em;
+		}
+	}
+}
+
+.footer__Rest{
+	@include s.fontType01(Bold);
+	position:relative;
+	padding-left:2em;
+	span{
+		display:inline-block;
+		width:1.2em;
+		position:absolute;
+		top:50%;
+		left:0;
+		margin-top:-0.4em;
+	}
+	b{
+		font-size:1.2em;
+		margin-left:0.8em;
+		@include s.media(m){
+			font-size:1.375em;
+		}
+	}
+}
+
+.footer__navi {
+	width:100%;
+	border-left:#FFF solid 1px;
+	padding:0 0 0 1em;
+	display:block;
+	margin-bottom:1em;
+	@include s.media(m){
+	}
+	&:nth-child(2){
+		width:50%;
+	}
+	&:nth-child(3){
+		width:50%;
+	}
+	&__sub{
+		width:100%;
+		display:flex;
+		flex-wrap:wrap;
+		padding-left:2em;
+		li{
+			width:40%;
+			@include s.media(m){
+				font-size:0.9em;
+			}
+			a{
+				position: relative;
+				padding-left:0.7em;
+				&::before {
+					content:"";
+					width:0.3em;
+					height:1px;
+					display:block;
+					background:#FFF;
+					position:absolute;
+					top:50%;
+					left:0;
+				}
+			}
+		}
+	}
+	li{
+		padding:5px 0;
+		@include s.media(m){
+			padding:0;
+			border:none;
+		}
+		a{
+			@include s.fontType01(Medium);
+			color:#FFF;
+			text-decoration:none;
+			line-height:1.7;
+			@include s.media(m){
+				font-size:0.875em;
+			}
+			&:hover {
+				color:  s.$colorType02;
+			}
+		}
+		>span{
+			padding:0 0 0.5em;
+			@include s.fontType01(Medium);
+			color:#FFF;
+			display:inline-block;
+			@include s.media(m){
+				font-size:0.875em;
+			}
+		}
+	}
+}

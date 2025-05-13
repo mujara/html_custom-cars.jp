@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head prefix="og: http://ogp.me/ns">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="keywords" content="●サイトの検索キーワード●" />
+<meta name="description" content="●サイトの検索説明●" />
+<title>●サイトのタイトル●</title>
+<meta property="og:url" content="●ページの URL●" />
+<meta property="og:type" content="●ページの種類●website article" />
+<meta property="og:title" content="●ページの タイトル●" />
+<meta property="og:description" content="●ページの説明文●" />
+<meta property="og:site_name" content="●サイト名●" />
+<meta property="og:image" content="●サムネイル画像のURL●" />
+<meta name="apple-mobile-web-app-title" content="●iOS表示名●" />
+<meta name="author" content="●作者名●" />
+<link rel="apple-touch-icon" href="iphone.png">
+<link rel="stylesheet" href="css/block-library-style.min.css" media="all" />
+<link rel="stylesheet" href="css/import.css" media="all" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=M+PLUS+Rounded+1c&family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="page single-stock">
+
+<div id="wrapper">
+	<header id="header" class="clearfix"> 
+		<div id="pageTopFix">
+
+		<div class="header__headBox">
+			<div class="inBase clearfix">
+				<div class="header__siteTitleBox"><a href="<?php echo home_url(); ?>">
+					<h1 class="header__siteTitle02">寺田商事グループ<span>カスタムカー専門店</span></h1>
+					<h1 class="header__siteTitle"><img src="img/common/siteTitle.svg" alt="滋賀のカスタム専門店アタッカー｜法人向け・個人向けエブリイ・ハイエース・ジムニーなどのカスタムカーを販売" /></h1>
+				</a><!-- /.header__siteTitleBox --></div>
+
+				<div class="header__naviBox">
+					<div class="header__naviHeadBox">
+						<div class="header__btnCarsensor"><a href="#" trget="_blank"><img src="img/common/logoCarsensor.png" alt="カーセンサー" /></a></div>
+						<div class="header__btnGoonet"><a href="#" trget="_blank"><img src="img/common/logoGoonet.png" alt="グーネット" /></a></div>
+						<div class="header__tel"><span><img src="img/common/iconTel.svg" alt="tel" /></span><strong>077-518-6820</strong></div>
+						<div class="header__mail"><a href="<?php echo home_url(); ?>/contact"><span><img src="img/common/iconMail.svg" alt="tel" /></span><strong>メールフォーム</strong></a></div>
+					<!-- /.header__naviHeadBox --></div>
+					<nav class="globalNavi">
+						<ul class="globalNavi__menu__main">
+							<li><a href="<?php echo home_url(); ?>/stock">在庫車両一覧</a></li>
+							<li><span>取り扱い車種</span>
+								<ul class="globalNavi__menu__sub">
+									<li><a href="https://every.custom-cars.jp/">エブリイ</a></li>
+									<li><a href="https://hiace.custom-cars.jp/">ハイエース</a></li>
+									<li><a href="https://hijet.custom-cars.jp/">ハイゼット</a></li>
+									<li><a href="https://probox.custom-cars.jp/">プロボックス</a></li>
+									<li><a href="https://jimny.custom-cars.jp/">ジムニー</a></li>
+									<li><a href="https://hustler.custom-cars.jp/">ハスラー</a></li>
+								</ul> 
+							</li>
+							<li><a href="<?php echo home_url(); ?>/works">施工事例</a></li>
+							<li><a href="<?php echo home_url(); ?>/reason">選ばれる理由</a></li>
+							<li><a href="<?php echo home_url(); ?>/flow">カスタムの流れ</a></li>
+							<li><a href="<?php echo home_url(); ?>/appraisal">買取査定</a></li>
+							<li><a href="<?php echo home_url(); ?>/staff">スタッフ紹介</a></li>
+							<li><a href="<?php echo home_url(); ?>/company">会社概要</a></li>
+						</ul>
+					<!-- /.globalNavi --></nav>
+				<!-- /.header__naviBox --></div>
+			<!-- /.inBase --></div>
+        <!-- /.header__headBox --></div>
+
+		<!-- /#pageTopFix --></div>
+		
+			<nav class="globalNaviSmall">
+				<div id="globalNaviSmallIcon" class="globalNaviSmall__icon globalNaviSmall__icon--type01">
+					<div class="globalNaviSmall__iconButton">
+						<span class="iconButton--top"></span>
+						<span class="iconButton--middle"></span>
+						<span class="iconButton--bottom"></span>
+					</div>
+				</div>
+
+				<div class="modal micromodal-slide" id="modal-globalNaviSmall" aria-hidden="true">
+					<div class="modal__overlay" tabindex="-1" data-micromodal-close>
+				    		<div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-globalNaviSmall-labelledby">
+
+							<div class="globalNaviSmall__menu" id="modal-globalNaviSmall-labelledby">
+								<div class="globalNaviSmall__menu__inner">
+									<div class="globalNaviSmall__titleBox">
+										<span class="globalNaviSmall__siteTitle02">寺田商事グループ<br>カスタムカー専門店</span>
+										<span class="globalNaviSmall__siteTitle"><img src="img/common/siteTitle02.svg" alt="滋賀のカスタム専門店アタッカー｜法人向け・個人向けエブリイ・ハイエース・ジムニーなどのカスタムカーを販売" /></span>
+									<!-- /.globalNaviSmall__title --></div>
+
+									<div class="carModelNavi__inner">
+										<div class="carModelNavi__button --type01"><a href="https://every.custom-cars.jp/">
+											<div class="carModelNavi__model">
+												<figure><img src="img/home/logoSuzuki.png" alt="SUZUKI" /></figure>
+												<figure><img src="img/home/logoEvery.png" alt="EVERY" /></figure>
+											<!-- /.carModelNavi__model --></div>
+											<figure class="carModelNavi__image"><img src="img/home/imgCar_every.png" alt="法人向け・個人向けエブリイのカスタム" /></figure>
+											<p>MORE</p>
+										</a><!-- /.carModelNavi__button --></div>
+										<div class="carModelNavi__button --type02"><a href="https://hiace.custom-cars.jp">
+											<div class="carModelNavi__model">
+												<figure><img src="img/home/logoToyota.png" alt="logoToyota" /></figure>
+												<figure><img src="img/home/logoHiace.png" alt="HIACE" /></figure>
+											<!-- /.carModelNavi__model --></div>
+											<figure class="carModelNavi__image"><img src="img/home/imgCar_hiace.png" alt="法人向け・個人向けハイエースのカスタム" /></figure>
+											<p>MORE</p>
+										</a><!-- /.carModelNavi__button --></div>
+										<div class="carModelNavi__button --type03"><a href="https://hijet.custom-cars.jp">
+											<div class="carModelNavi__model">
+												<figure><img src="img/home/logoDaihatsu.png" alt="DAIHATSU" /></figure>
+												<figure><img src="img/home/logoHijet.png" alt="HIJET" /></figure>
+											<!-- /.carModelNavi__model --></div>
+											<figure class="carModelNavi__image"><img src="img/home/imgCar_hijet.png" alt="法人向け・個人向けハイゼットのカスタム" /></figure>
+											<p>MORE</p>
+										</a><!-- /.carModelNavi__button --></div>
+										<div class="carModelNavi__button --type04"><a href="https://probox.custom-cars.jp">
+											<div class="carModelNavi__model">
+												<figure><img src="img/home/logoToyota.png" alt="TOYOTA" /></figure>
+												<figure><img src="img/home/logoProbox.png" alt="PROBOX" /></figure>
+											<!-- /.carModelNavi__model --></div>
+											<figure class="carModelNavi__image"><img src="img/home/imgCar_probox.png" alt="法人向け・個人向けプロボックスのカスタム" /></figure>
+											<p>MORE</p>
+										</a><!-- /.carModelNavi__button --></div>
+										<div class="carModelNavi__button --type05"><a href="https://jimny.custom-cars.jp">
+											<div class="carModelNavi__model">
+												<figure><img src="img/home/logoSuzuki.png" alt="SUZUKI" /></figure>
+												<figure><img src="img/home/logoJimny.png" alt="JIMNY" /></figure>
+											<!-- /.carModelNavi__model --></div>
+											<figure class="carModelNavi__image"><img src="img/home/imgCar_jimny.png" alt="法人向け・個人向けジムニーのカスタム" /></figure>
+											<p>MORE</p>
+										</a><!-- /.carModelNavi__button --></div>
+										<div class="carModelNavi__button --type06"><a href="https://hustler.custom-cars.jp">
+											<div class="carModelNavi__model">
+												<figure><img src="img/home/logoSuzuki.png" alt="SUZUKI" /></figure>
+												<figure><img src="img/home/logoHustler.png" alt="HUSTLER" /></figure>
+											<!-- /.carModelNavi__model --></div>
+											<figure class="carModelNavi__image"><img src="img/home/imgCar_hustler.png" alt="法人向け・個人向けハスラーのカスタム" /></figure>
+											<p>MORE</p>
+										</a><!-- /.carModelNavi__button --></div>
+									<!-- /.carModelNavi__inner --></div>
+
+
+									<ul class="globalNaviSmall__menu__main">
+										<li><a href="<?php echo home_url(); ?>/stock">在庫車両一覧</a></li>
+										<li><a href="<?php echo home_url(); ?>/works">施工事例</a></li>
+										<li><a href="<?php echo home_url(); ?>/reason">選ばれる理由</a></li>
+										<li><a href="<?php echo home_url(); ?>/flow">カスタムの流れ</a></li>
+										<li><a href="<?php echo home_url(); ?>/appraisal">買取査定</a></li>
+										<li><a href="<?php echo home_url(); ?>/staff">スタッフ紹介</a></li>
+										<li><a href="<?php echo home_url(); ?>/company">会社概要</a></li>
+										<li><a href="<?php echo home_url(); ?>/contact">お問い合わせ</a></li>
+									</ul>
+								<!-- /.globalNaviSmall__menu__inner --></div>
+							<!-- /.globalNaviSmall__menu --></div>
+
+				    		<!-- /.modal__container --></div>
+					<!-- /.modal__overlay --></div>
+				<!-- /#modal-globalNaviSmall --></div>
+		    <!-- /.globalNaviSmall --></nav>
+
+	<!-- /#header --></header>
+	
+	<div id="contents" class="clearfix">
+		
+
+		<div class="article">
+
+	    	<div class="pageTitleBox">
+			<div class="inBase"><div class="inBase__inner clearfix">
+				<figure><img src="img/page/imgPageTitle.png" alt="ページタイトル背景" /></figure>
+				<figure><img src="img/page/imgPageTitleImage.png" alt="車種" /></figure>
+				<div class="pageTitle"><h1>在庫車両</h1></div>
+			<!-- /.inBase__inner --></div><!-- /.inBase --></div>
+		<!-- /.pageTitleBox --></div>
+
+		<div class="topicpathBox sM">
+			<div class="inBase"><div class="inBase__inner clearfix">
+				<div class="topicpath">
+					<ul>
+						<li><a href="index.html">ホーム</a></li>
+						<li>タイトルタイトルタイトル</li>
+						<li>タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</li>
+					</ul>
+				<!-- /.topicpath --></div>
+			<!-- /.inBase__inner --></div><!-- /.inBase --></div>
+		<!-- /.topicpathBox --></div>
+
+		<div class="inBase --typeBG01"><div class="inBase__inner clearfix">
+
+				<div class="pageBox sM">
+
+					<div class="pageBox__content">
+
+						<div class="imageGalleryBox">
+							<div class="imageGallery">
+								<div class="imageGallery__imageBox">
+									<input type="radio" id="imageGallery__label001" name="imageGalleryStock" class="imageGallery__selector" checked/>
+									<div class="imageGallery__mainImage"><a href="a.html">
+										<img src="img/sample/imgCarSample01.jpg" alt=""/>
+									</a><!-- /.imageGallery__mainImage --></div>
+									<label for="imageGallery__label001" class="imageGallery__thumbnail">
+										<img src="img/sample/imgCarSample01.jpg" alt=""/>
+									</label>
+								<!-- /.imageGallery__imageBox --></div>
+		
+								<div class="imageGallery__imageBox">
+									<input type="radio" id="imageGallery__label002" name="imageGalleryStock" class="imageGallery__selector"/>
+									<div class="imageGallery__mainImage"><a href="b.html">
+										<img src="img/sample/pixta_542675_L.jpg" alt=""/>
+									</a><!-- /.imageGallery__mainImage --></div>
+									<label for="imageGallery__label002" class="imageGallery__thumbnail">
+										<img src="img/sample/imgSbox01.jpg" alt=""/>
+									</label>
+								<!-- /.imageGallery__imageBox --></div>
+		
+								<div class="imageGallery__imageBox">
+									<input type="radio" id="imageGallery__label003" name="imageGalleryStock" class="imageGallery__selector"/>
+									<div class="imageGallery__mainImage">
+										<img src="img/sample/sample01.jpg" alt=""/>
+									<!-- /.imageGallery__mainImage --></div>
+									<label for="imageGallery__label003" class="imageGallery__thumbnail">
+										<img src="img/sample/imgSbox01.jpg" alt=""/>
+									</label>
+								<!-- /.imageGallery__imageBox --></div>
+		
+								<div class="imageGallery__imageBox">
+									<input type="radio" id="imageGallery__label004" name="imageGalleryStock" class="imageGallery__selector"/>
+									<div class="imageGallery__mainImage">
+										<img src="img/sample/sample03.jpg" alt=""/>
+									<!-- /.imageGallery__mainImage --></div>
+									<label for="imageGallery__label004" class="imageGallery__thumbnail">
+										<img src="img/sample/imgSbox01.jpg" alt=""/>
+									</label>
+								<!-- /.imageGallery__imageBox --></div>
+		
+								<div class="imageGallery__imageBox">
+									<input type="radio" id="imageGallery__label005" name="imageGalleryStock" class="imageGallery__selector"/>
+									<div class="imageGallery__mainImage">
+										<img src="img/sample/imgCarSample01.jpg" alt=""/>
+									<!-- /.imageGallery__mainImage --></div>
+									<label for="imageGallery__label005" class="imageGallery__thumbnail">
+										<img src="img/sample/imgSbox01.jpg" alt=""/>
+									</label>
+								<!-- /.imageGallery__imageBox --></div>
+		
+								<div class="imageGallery__imageBox">
+									<input type="radio" id="imageGallery__label006" name="imageGalleryStock" class="imageGallery__selector"/>
+									<div class="imageGallery__mainImage">
+										<img src="img/sample/imgCarSample02.jpg" alt=""/>
+									<!-- /.imageGallery__mainImage --></div>
+									<label for="imageGallery__label006" class="imageGallery__thumbnail">
+										<img src="img/sample/imgSbox01.jpg" alt=""/>
+									</label>
+								<!-- /.imageGallery__imageBox --></div>
+		
+								<div class="imageGallery__imageBox">
+									<input type="radio" id="imageGallery__label007" name="imageGalleryStock" class="imageGallery__selector"/>
+									<div class="imageGallery__mainImage">
+										<img src="img/sample/imgCarSample03.jpg" alt=""/>
+									<!-- /.imageGallery__mainImage --></div>
+									<label for="imageGallery__label007" class="imageGallery__thumbnail">
+										<img src="img/sample/imgSbox01.jpg" alt=""/>
+									</label>
+								<!-- /.imageGallery__imageBox --></div>
+		
+								<div class="imageGallery__imageBox">
+									<input type="radio" id="imageGallery__label008" name="imageGalleryStock" class="imageGallery__selector"/>
+									<div class="imageGallery__mainImage">
+										<img src="img/sample/imgCarSample04.jpg" alt=""/>
+									<!-- /.imageGallery__mainImage --></div>
+									<label for="imageGallery__label008" class="imageGallery__thumbnail">
+										<img src="img/sample/imgSbox01.jpg" alt=""/>
+									</label>
+								<!-- /.imageGallery__imageBox --></div>
+		
+								<div class="imageGallery__imageBox">
+									<input type="radio" id="imageGallery__label009" name="imageGalleryStock" class="imageGallery__selector"/>
+									<div class="imageGallery__mainImage">
+										<img src="img/sample/imgCarSample05.jpg" alt=""/>
+									<!-- /.imageGallery__mainImage --></div>
+									<label for="imageGallery__label009" class="imageGallery__thumbnail">
+										<img src="img/sample/imgSbox01.jpg" alt=""/>
+									</label>
+								<!-- /.imageGallery__imageBox --></div>
+		
+								<div class="imageGallery__imageBox">
+									<input type="radio" id="imageGallery__label010" name="imageGalleryStock" class="imageGallery__selector"/>
+									<div class="imageGallery__mainImage">
+										<img src="img/sample/imgThreeColumn02.jpg" alt=""/>
+									<!-- /.imageGallery__mainImage --></div>
+									<label for="imageGallery__label010" class="imageGallery__thumbnail">
+										<img src="img/sample/imgSbox01.jpg" alt=""/>
+									</label>
+								<!-- /.imageGallery__imageBox --></div>
+							<!-- /.imageGallery --></div>
+						<!-- /.imageGalleryBox --></div>
+
+						<div class="carDataBox --dataHeadBox">
+							<div class="carDataBox__tagBox">
+								<ul class="carDataBox__tag">
+									<li class="stock_new">NEW</li>
+									<li class="stock_unused">登録済未使用車</li>
+									<li class="stock_choinori">チョイ乗り</li>
+									<li class="stock_limited">限定1台</li>
+								</ul>
+								<div class="carDataBox__model"><span class="works-every">エブリィ</span></div>
+							<!-- /.carDataBox__tagBox --></div>
+							<div class="carDataBox__priceSectionBox">
+								<div class="carDataBox__price01">
+									<span>支払い総額<small>（税込）</small></span><b>170.3<small>万円</small></b>
+								<!-- /.carDataBox__price --></div>
+								<div class="carDataBox__price02">
+									<p><span>車両本体<br><small>（税込）</small></span><b>154.9<small>万円</small></b></p>
+									<p><span>諸費用<br><small>（税込）</small></span><b>15.4<small>万円</small></b></p>
+								<!-- /.carDataBox__price01 --></div>
+							<!-- /.carDataBox__priceBox --></div>
+						<!-- /.carDataBox --></div>
+
+						<h2 class="carDataBox__title">車両情報</h2>
+						<h3 class="carDataBox__subTitle">状態</h3>
+
+
+
+
+<div class="wp-block-group table-two-colmun is-layout-constrained wp-block-group-is-layout-constrained">
+	<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><th>タイトル</th><td>内容</td></tr></tbody></table></figure>
+</div>
+
+
+
+<div class="wp-block-group table-two-colmun is-layout-constrained wp-block-group-is-layout-constrained">
+	<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><th>年式(初度登録年)<span class="btnTooltip" tooltip-title="車両の初度登録年を表示しています。&#13;&#10;ただし並行輸入車の場合は、その車が&#13;&#10;製造された製造年を表示しています。">?</span></th><td>2022(R04)</td></tr></tbody></table></figure>
+	<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><th>ワンオーナー<span class="btnTooltip" tooltip-title="過去の所有者が単一である中古車の&#13;&#10;こと。ただし、業者間売買などで車検証&#13;&#10;での名義は複数移転している場合があ&#13;&#10;ります。">?</span></th><td>－</td></tr></tbody></table></figure>
+	<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><th>走行距離<span class="btnTooltip" tooltip-title="走行距離を『万km単位』もしくは&#13;&#10;『メーター交換車』『不明』&#13;&#10;『改ざん車』と表示しています。&#13;&#10;『メーター交換車』は、メーター交換前後&#13;&#10;の走行距離も明記しています。">?</span></th><td>3.6万km</td></tr></tbody></table></figure>
+	<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><th>キャンピングカー</th><td>－</td></tr></tbody></table></figure>
+
+
+	<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><th>修復歴<span class="btnAnnotation" data-micromodal-trigger="modal-annotation01">?</span></th><td>－</td></tr></tbody></table></figure>
+	<!-- 注釈のモーダルウィンドウ画面ここから -->
+	<div class="modal micromodal-slide modal-annotation" id="modal-annotation01" aria-hidden="true">
+		<div class="modal__overlay" tabindex="-1" data-micromodal-close>
+			<div class="lum-close-button"></div>
+	    		<div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-movie-title">
+					<div class="annotationBox">修復歴の有無を全車に表示しています。<!-- /.youtubeBox --></div>
+	    		</div>
+		</div>
+	</div>
+	<!--注釈のモーダルウィンドウ画面ここまで -->
+	<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><th>福祉車両</th><td>－</td></tr></tbody></table></figure>
+	<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><th>定期点検記録簿<span class="btnTooltip" tooltip-title="16行目&#13;&#10;テキスト">?</span></th><td>－</td></tr></tbody></table></figure>
+	<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><th>新車物件</th><td>－</td></tr></tbody></table></figure>
+	<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><th>禁煙車<span class="btnTooltip" tooltip-title="16行目&#13;&#10;テキスト">?</span></th><td>◯</td></tr></tbody></table></figure>
+	<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><th>正規輸入車</th><td>－</td></tr></tbody></table></figure>
+	<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><th>リサイクル料<span class="btnTooltip" tooltip-title="16行目&#13;&#10;テキスト">?</span></th><td>リ済込</td></tr></tbody></table></figure>
+	<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><th>登録（届出）済未使用車<span class="btnTooltip" tooltip-title="16行目&#13;&#10;テキスト">?</span></th><td>－</td></tr></tbody></table></figure>
+	<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><th>展示・試乗車<span class="btnTooltip" tooltip-title="16行目&#13;&#10;テキスト">?</span></th><td>－</td></tr></tbody></table></figure>
+	<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><th>レンタカーアップ<span class="btnTooltip" tooltip-title="16行目&#13;&#10;テキスト">?</span></th><td>－</td></tr></tbody></table></figure>
+</div>
+
+<div class="wp-block-group table-one-colmun is-layout-constrained wp-block-group-is-layout-constrained --typeTableConnection">
+	<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><th>エコカー減税対象車</th><td>－</td></tr></tbody></table></figure>
+	<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><th>車検<span class="btnTooltip" tooltip-title="16行目&#13;&#10;テキスト">?</span></th><td>2025(R07)年8月</td></tr></tbody></table></figure>
+	<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><th>法定整備<span class="btnTooltip" tooltip-title="16行目&#13;&#10;テキスト">?</span></th><td>3法定整備無<br>車両の状態については販売店にご確認ください。</td></tr></tbody></table></figure>
+	<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><th>保証<span class="btnTooltip" tooltip-title="16行目&#13;&#10;テキスト">?</span></th><td>保証付：販売店保証　保証期間：3ヵ月　保証距離：3,000km<br>保証費用は本体価格に含まれています。詳細については、販売店にご確認ください。</td></tr></tbody></table></figure>
+</div>
+						<h3 class="carDataBox__subTitle">基本スペック</h3>
+
+<div class="wp-block-group table-two-colmun is-layout-constrained wp-block-group-is-layout-constrained">
+	<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><th>ボディタイプ</th><td>ステーションワゴン</td></tr></tbody></table></figure>
+	<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><th>駆動方式</th><td>2WD</td></tr></tbody></table></figure>
+	<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><th>色</th><td>ブラックマイカ</td></tr></tbody></table></figure>
+	<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><th>ハンドル</th><td>右</td></tr></tbody></table></figure>
+	<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><th>車台末尾番号</th><td>154</td></tr></tbody></table></figure>
+	<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><th>ミッション</th><td>フロアCVT</td></tr></tbody></table></figure>
+	<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><th>排気量</th><td>1500cc</td></tr></tbody></table></figure>
+	<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><th>乗車定員</th><td>5名</td></tr></tbody></table></figure>
+	<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><th>エンジン種別</th><td>ガソリン</td></tr></tbody></table></figure>
+	<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><th>ドア数</th><td>5</td></tr></tbody></table></figure>
+</div>
+
+
+						<h3 class="carDataBox__subTitle">装備仕様</h3>
+						<h4 class="carDataBox__subTitle02">安全装備</h4>
+
+
+<div class="wp-block-group table-two-colmun is-layout-constrained wp-block-group-is-layout-constrained">
+<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><th>ボディタイプ</th><td>ハッチパック</td></tr></tbody></table></figure>
+
+
+
+<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><th>シフト</th><td>CVT</td></tr></tbody></table></figure>
+
+
+
+<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><th>駆動</th><td>2WD</td></tr></tbody></table></figure>
+
+
+
+<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><th>リサイクル料金</th><td>Cり済別</td></tr></tbody></table></figure>
+
+
+
+<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><th>整理番号</th><td>1006</td></tr></tbody></table></figure>
+
+
+
+<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><th>車体番号</th><td>0533</td></tr></tbody></table></figure>
+</div>
+
+
+
+<div class="wp-block-group table-three-colmun --type02 is-layout-constrained wp-block-group-is-layout-constrained">
+<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><th>エアコン</th><td>〇</td></tr></tbody></table></figure>
+
+
+
+<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><th>オートエアコン</th><td>ー</td></tr></tbody></table></figure>
+
+
+
+<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><th>パワステ</th><td>ー</td></tr></tbody></table></figure>
+
+
+
+<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><th>パワーウィンドゥ</th><td>ー</td></tr></tbody></table></figure>
+
+
+
+<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><th>エアバック</th><td>ー</td></tr></tbody></table></figure>
+
+
+
+<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><th>ABS</th><td>ー</td></tr></tbody></table></figure>
+
+
+
+<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><th>キーレス</th><td>ー</td></tr></tbody></table></figure>
+
+
+
+<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><th>キーフリー</th><td>ー</td></tr></tbody></table></figure>
+
+
+
+<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><th>イモビライザー</th><td>ー</td></tr></tbody></table></figure>
+
+
+
+<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><th>LED（HID）</th><td>ー</td></tr></tbody></table></figure>
+
+
+
+<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><th>フォグランプ</th><td>ー</td></tr></tbody></table></figure>
+
+
+
+<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><th>アルミホイール</th><td>ー</td></tr></tbody></table></figure>
+
+
+
+<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><th>エアロ</th><td>ー</td></tr></tbody></table></figure>
+
+
+
+<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><th>リヤスポイラー</th><td>ー</td></tr></tbody></table></figure>
+
+
+
+<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><th>片側電動スライドドア</th><td>ー</td></tr></tbody></table></figure>
+
+
+
+<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><th>両側電動スライドドア</th><td>ー</td></tr></tbody></table></figure>
+
+
+
+<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><th>衝突被害軽減システム</th><td>ー</td></tr></tbody></table></figure>
+
+
+
+<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><th>横すべり防止装置</th><td>ー</td></tr></tbody></table></figure>
+
+
+
+<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><th>ターボ車</th><td>ー</td></tr></tbody></table></figure>
+</div>
+
+
+
+<div class="wp-block-group table-three-colmun --type02 is-layout-constrained wp-block-group-is-layout-constrained">
+<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><th>CD</th><td>〇</td></tr></tbody></table></figure>
+
+
+
+<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><th>DVD再生</th><td>ー</td></tr></tbody></table></figure>
+
+
+
+<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><th>メモリーナビ</th><td>ー</td></tr></tbody></table></figure>
+
+
+
+<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><th>HDDナビ</th><td>ー</td></tr></tbody></table></figure>
+
+
+
+<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><th>録音</th><td>ー</td></tr></tbody></table></figure>
+
+
+
+<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><th>保証</th><td>ー</td></tr></tbody></table></figure>
+
+
+
+<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><th>ワンセグ</th><td>ー</td></tr></tbody></table></figure>
+
+
+
+<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><th>フルセグ</th><td>ー</td></tr></tbody></table></figure>
+
+
+
+<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><th>ETC</th><td>ー</td></tr></tbody></table></figure>
+
+
+
+<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><th>バックカメラ</th><td>ー</td></tr></tbody></table></figure>
+</div>
+
+
+
+<div class="wp-block-group table-three-colmun --type02 is-layout-constrained wp-block-group-is-layout-constrained">
+<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><th>ワンオーナー</th><td>〇</td></tr></tbody></table></figure>
+
+
+
+<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><th>禁煙車</th><td>ー</td></tr></tbody></table></figure>
+
+
+
+<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><th>修復歴無し</th><td>ー</td></tr></tbody></table></figure>
+
+
+
+<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><th>取説</th><td>ー</td></tr></tbody></table></figure>
+
+
+
+<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><th>保証書</th><td>ー</td></tr></tbody></table></figure>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						<div class="carDataBox">
+
+							<div class="carDataBox__modelBox">
+								<div class="carDataBox__model"><span class="works-every">エブリィ</span></div>
+								<p class="carDataBox__modelDetail">アイコニックなルーバーグリルで、大きく印象を変える丸目フェイスチェンジキットと丸型テールランプが目を引くコンプリートキット。</p>
+							<!-- /.carDataBox__modelBox --></div>
+							<div class="carDataBox__customBox">
+								<h2 class="carDataBox__custom">最高の快適空間を生み出すカスタム</h2>
+								<p>カスタムの詳細の文章が入ります。カスタムの詳細の文章が入ります。カスタムの詳細の文章が入ります。<br>
+									カスタムの詳細の文章が入ります。カスタムの詳細の文章が入ります。カスタムの詳細の文章が入ります。カスタムの詳細の文章が入ります。</p>
+							<!-- /.carDataBox__customBox --></div>
+							<div class="carDataBox__informationBox">
+								<div class="carDataBox__informationBox01">
+									<dl>
+										<dt>年式</dt>
+										<dd>2024（H26）</dd>
+									</dl>
+									<dl>
+										<dt>修復歴</dt>
+										<dd>無</dd>
+									</dl>
+									<dl>
+										<dt>車検</dt>
+										<dd>2026(R08)  年3月</dd>
+									</dl>
+								<!-- /.carDataBox__informationBox01 --></div>
+								<dl>
+									<dt>保証</dt>
+									<dd>保証付：販売店保証　保証期間：3ヵ月　保証距離：無制限<br>
+										保証費用は本体価格に含まれています。詳細については、販売店にご確認ください。</dd>
+								</dl>
+								<div class="carDataBox__informationBox02">
+									<dl>
+										<dt>走行距離</dt>
+										<dd>4.7万ｋｍ</dd>
+									</dl>
+									<dl>
+										<dt>修復歴</dt>
+										<dd>法定整備付<br>
+											法定12ヶ月点検整備付※商用車は6ヶ月点検整備付</dd>
+									</dl>
+								<!-- /.carDataBox__informationBox02 --></div>
+								<dl>
+									<dt>地域</dt>
+									<dd>大阪府・京都府・兵庫県</dd>
+								</dl>
+							<!-- /.carDataBox__informationBox --></div>
+						<!-- /.carDataBox --></div>
+
+
+
+
+					<!-- /.pageBox__content --></div>
+				<!-- /.pageBox --></div>
+
+
+				<div class="homeStockBox__listBox --typeList">
+
+					<div class="homeStockBox__list"><a href="#">
+						<p class="homeStockBox__name">コンプリートキット<br>for VAN</p>
+						<figure class="homeStockBox__image"><img src="img/home/imgSample01.jpg" alt="コンプリートキットfor VAN" /></figure>
+						<p class="homeStockBox__price01"><span>支払総額</span><b>170.3</b><span>万円</span></p>
+						<p class="homeStockBox__price02"><span>車両本体</span><b>154.9</b><span>万円</span></p>
+						<p class="homeStockBox__price03"><span>諸費用</span><b>15.4</b><span>万円</span></p>
+						<div class="homeStockBox__information">
+							<table>
+								<tr>
+									<th>年式</th>
+									<td>令和5年式</td>
+								</tr>
+								<tr>
+									<th>走行距離</th>
+									<td>15km</td>
+								</tr>
+								<tr>
+									<th>色</th>
+									<td>アイボリー</td>
+								</tr>
+								<tr>
+									<th>法定整備</th>
+									<td>なし</td>
+								</tr>
+								<tr>
+									<th>保証</th>
+									<td>3000km</td>
+								</tr>
+							</table>
+						<!-- /.homeStockBox__information --></div>
+						<div class="homeStockBox__new-label">New</div>
+						<p class="homeStockBox__button"><span>詳しく見る</span></p>
+					</a><!-- /.homeStockBox__list --></div>
+					
+					<div class="homeStockBox__list"><a href="#">
+						<p class="homeStockBox__name">コンプリートキット<br>for VAN</p>
+						<figure class="homeStockBox__image"><img src="img/home/imgSample01.jpg" alt="コンプリートキットfor VAN" /></figure>
+						<p class="homeStockBox__sentence">アイコニックなルーバーグリルで、大きく印象を変える丸目フェイスチェンジキットと丸型テールランプが目を引くコンプリートキット。</p>
+						<p class="homeStockBox__price"><span>価格</span><b>&yen;1,250,000</b><span>（税込）</span></p>
+						<p class="homeStockBox__button"><span>詳しく見る</span></p>
+					</a><!-- /.homeStockBox__list --></div>
+					
+					<div class="homeStockBox__list"><a href="#">
+						<p class="homeStockBox__name">コンプリートキット<br>for VAN</p>
+						<figure class="homeStockBox__image"><img src="img/home/imgSample01.jpg" alt="コンプリートキットfor VAN" /></figure>
+						<p class="homeStockBox__sentence">アイコニックなルーバーグリルで、大きく印象を変える丸目フェイスチェンジキットと丸型テールランプが目を引くコンプリートキット。</p>
+						<p class="homeStockBox__price"><span>価格</span><b>&yen;1,250,000</b><span>（税込）</span></p>
+						<p class="homeStockBox__button"><span>詳しく見る</span></p>
+					</a><!-- /.homeStockBox__list --></div>
+					
+					<div class="homeStockBox__list"><a href="#">
+						<p class="homeStockBox__name">コンプリートキット<br>for VAN</p>
+						<figure class="homeStockBox__image"><img src="img/home/imgSample01.jpg" alt="コンプリートキットfor VAN" /></figure>
+						<p class="homeStockBox__sentence">アイコニックなルーバーグリルで、大きく印象を変える丸目フェイスチェンジキットと丸型テールランプが目を引くコンプリートキット。</p>
+						<p class="homeStockBox__price"><span>価格</span><b>&yen;1,250,000</b><span>（税込）</span></p>
+						<p class="homeStockBox__button"><span>詳しく見る</span></p>
+					</a><!-- /.homeStockBox__list --></div>
+					
+					<div class="homeStockBox__list"><a href="#">
+						<p class="homeStockBox__name">コンプリートキット<br>for VAN</p>
+						<figure class="homeStockBox__image"><img src="img/home/imgSample01.jpg" alt="コンプリートキットfor VAN" /></figure>
+						<p class="homeStockBox__sentence">アイコニックなルーバーグリルで、大きく印象を変える丸目フェイスチェンジキットと丸型テールランプが目を引くコンプリートキット。</p>
+						<p class="homeStockBox__price"><span>価格</span><b>&yen;1,250,000</b><span>（税込）</span></p>
+						<p class="homeStockBox__button"><span>詳しく見る</span></p>
+					</a><!-- /.homeStockBox__list --></div>
+					
+					<div class="homeStockBox__list"><a href="#">
+						<p class="homeStockBox__name">コンプリートキット<br>for VAN</p>
+						<figure class="homeStockBox__image"><img src="img/home/imgSample01.jpg" alt="コンプリートキットfor VAN" /></figure>
+						<p class="homeStockBox__sentence">アイコニックなルーバーグリルで、大きく印象を変える丸目フェイスチェンジキットと丸型テールランプが目を引くコンプリートキット。</p>
+						<p class="homeStockBox__price"><span>価格</span><b>&yen;1,250,000</b><span>（税込）</span></p>
+						<p class="homeStockBox__button"><span>詳しく見る</span></p>
+					</a><!-- /.homeStockBox__list --></div>
+					
+					<div class="homeStockBox__list"><a href="#">
+						<p class="homeStockBox__name">コンプリートキット<br>for VAN</p>
+						<figure class="homeStockBox__image"><img src="img/home/imgSample01.jpg" alt="コンプリートキットfor VAN" /></figure>
+						<p class="homeStockBox__sentence">アイコニックなルーバーグリルで、大きく印象を変える丸目フェイスチェンジキットと丸型テールランプが目を引くコンプリートキット。</p>
+						<p class="homeStockBox__price"><span>価格</span><b>&yen;1,250,000</b><span>（税込）</span></p>
+						<p class="homeStockBox__button"><span>詳しく見る</span></p>
+					</a><!-- /.homeStockBox__list --></div>
+					
+					<div class="homeStockBox__list"><a href="#">
+						<p class="homeStockBox__name">コンプリートキット<br>for VAN</p>
+						<figure class="homeStockBox__image"><img src="img/home/imgSample01.jpg" alt="コンプリートキットfor VAN" /></figure>
+						<p class="homeStockBox__sentence">アイコニックなルーバーグリルで、大きく印象を変える丸目フェイスチェンジキットと丸型テールランプが目を引くコンプリートキット。</p>
+						<p class="homeStockBox__price"><span>価格</span><b>&yen;1,250,000</b><span>（税込）</span></p>
+						<p class="homeStockBox__button"><span>詳しく見る</span></p>
+					</a><!-- /.homeStockBox__list --></div>
+					
+					<div class="homeStockBox__list"><a href="#">
+						<p class="homeStockBox__name">コンプリートキット<br>for VAN</p>
+						<figure class="homeStockBox__image"><img src="img/home/imgSample01.jpg" alt="コンプリートキットfor VAN" /></figure>
+						<p class="homeStockBox__sentence">アイコニックなルーバーグリルで、大きく印象を変える丸目フェイスチェンジキットと丸型テールランプが目を引くコンプリートキット。</p>
+						<p class="homeStockBox__price"><span>価格</span><b>&yen;1,250,000</b><span>（税込）</span></p>
+						<p class="homeStockBox__button"><span>詳しく見る</span></p>
+					</a><!-- /.homeStockBox__list --></div>
+
+				<!-- /.homeStockBox__listBox --></div>
+
+				
+				
+
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+		<!-- /.inBase__inner --></div><!-- /.inBase --></div>
+
+		<!-- /.article --></div>
+        
+	<!-- /#contents --></div>
+
+	
+	<footer id="footer">
+		<div class="footer__inner clearfix">
+		<div class="inBase clearfix"><div class="inBase__inner clearfix">
+			<p class="footer__groupTitle">寺田商事グループ</p>
+			<div class="footer__groupBox">
+				<div class="footer__group"><a href="https://teradagroup.co.jp/" target="_blank">
+					<figure><img src="img/common/logoTeradaShoji.png" alt="寺田商事株式会社" /></figure>
+				</a><!-- /.footer__group --></div>
+				<div class="footer__group"><a href="https://www.noas.site/" target="_blank">
+					<figure><img src="img/common/logoNoas.png" alt="コンパクトカー専門店ノアーズ" /></figure>
+				</a><!-- /.footer__group --></div>
+				<div class="footer__group"><a href="https://as-tsujii.com/" target="_blank">
+					<figure><img src="img/common/logoAs-tsujii.png" alt="オートサービス辻井" /></figure>
+				</a><!-- /.footer__group --></div>
+				<div class="footer__group"><a href="https://www.ohmitakara.com/" target="_blank">
+					<figure><img src="img/common/logoOhmitakara.png" alt="おうみたからfarm" /></figure>
+				</a><!-- /.footer__group --></div>
+			<!-- /.footer__groupBox --></div>
+
+			<div class="footer__informationBox">
+				<div class="footer__information">
+					<div class="footer__title">
+						<span>寺田商事グループ<small>カスタムカー専門店</small></span>
+						<span><img src="img/common/siteTitle02.svg" alt="滋賀のカスタム専門店アタッカー" /></span>
+					<!-- /.footer__title --></div>
+					 <p class="footer__address">〒524-0053  滋賀県守山市横江町167-1</p>
+					 <p class="footer__tel"><span><img src="img/common/iconTel02.svg" alt="TEL" /></span>077-518-6820</p>
+					 <p class="footer__time"><span><img src="img/common/iconTime.svg" alt="営業時間" /></span>営業時間　<b>10:00 - 18:30</b></p>
+					 <p class="footer__Rest"><span><img src="img/common/iconRest.svg" alt="定休日" /></span>定休日　<b>毎週水曜日</b></p>
+				<!-- /.footer__information --></div>
+
+				<div class="footer__information">
+					<ul class="footer__navi">
+						<li><a href="<?php echo home_url(); ?>/stock">在庫車両一覧</a></li>
+						<li><span>取り扱い車種</span>
+							<ul class="footer__navi__sub">
+								<li><a href="https://every.custom-cars.jp">エブリイ</a></li>
+								<li><a href="https://hiace.custom-cars.jp">ハイエース</a></li>
+								<li><a href="https://hijet.custom-cars.jp">ハイゼット</a></li>
+								<li><a href="https://probox.custom-cars.jp">プロボックス</a></li>
+								<li><a href="https://jimny.custom-cars.jp">ジムニー</a></li>
+								<li><a href="https://hustler.custom-cars.jp">ハスラー</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="footer__navi">
+						<li><a href="<?php echo home_url(); ?>/works">施工事例</a></li>
+						<li><a href="<?php echo home_url(); ?>/reason">選ばれる理由</a></li>
+						<li><a href="<?php echo home_url(); ?>/flow">カスタムの流れ</a></li>
+						<li><a href="<?php echo home_url(); ?>/appraisal">買取査定</a></li>
+					</ul>
+					<ul class="footer__navi">
+						<li><a href="<?php echo home_url(); ?>/staff">スタッフ紹介</a></li>
+						<li><a href="<?php echo home_url(); ?>/company">会社概要</a></li>
+					</ul>
+				<!-- /.footer__information --></div>
+				 
+				<div class="footer__information">
+					<div class="googleMapBox">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1633.0562973791764!2d135.96954597119813!3d35.05392397268275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600173db4e8f3e4b%3A0x82c6f8f0c7b34d34!2z44CSNTI0LTAwNTMg5ruL6LOA55yM5a6I5bGx5biC5qiq5rGf55S677yR77yW77yX4oiS77yR!5e0!3m2!1sja!2sjp!4v1740574894258!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					<!-- /.googleMapBox --></div>
+				<!-- /.footer__information --></div>
+			<!-- /.footer__informationBox --></div>
+
+		<!-- /.inBase__inner --></div><!-- /.inBase --></div>
+	<!-- /.footer__inner --></div>
+	<!-- /#footer --></footer>
+
+	<small class="copyright">Copyright &copy; 2020 TERADA Group. All Rights Reserved.</small>
+        
+	<p id="btnRise"><a href="#wrapper"><span>Page TOP</span></a></p>
+	  
+	<div id="btnTelEmpty"></div>
+    
+    <div id="btnPageBottom">
+	        <div class="btnPageBottom--btn">
+	            <a class="clearfix" href="tel:0775186820">
+	                <span>TEL</span>
+	            </a>
+	            <a class="clearfix" href="<?php echo home_url(); ?>/contact">
+	                <span>MALL</span>
+	            </a>
+	            <a class="clearfix" href="#">
+					<figure><img src="img/common/logoCarsensor.png" alt="カーセンサー" /></figure>
+	            </a>
+	            <a class="clearfix" href="#">
+					<figure><img src="img/common/logoGoonet.png" alt="グーネット" /></figure>
+	            </a>
+	        <!-- /.btnPageBottom--btn --></div>
+    <!-- /#btnPageBottom --></div>
+<!-- /#wrapper --></div>
+
+</body>
+</html>
+
+<script data-main="js/main" src="js/require.js"></script>

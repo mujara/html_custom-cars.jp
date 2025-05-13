@@ -1,0 +1,592 @@
+@use "../_setting" as s;
+
+/* .--typeScrollFadeIn 汎用スクロールアクション */
+
+.--typeScrollFadeIn {
+	@include s.media(m){
+	  opacity: 0;
+	  transition: 1s;
+	  transition-duration:1.5s;
+	}
+}
+
+.--typeScrollFadeIn.active {
+	@include s.media(m){
+  		opacity: 1;
+		//animation-name:fadeUpAnime;
+		//animation-duration:1s;
+		//animation-fill-mode:forwards;
+	}
+}
+
+/* #wrapper スクロールアクション */
+
+#wrapper.--typeScrollAction{
+	@include s.media(m){
+  		opacity: 0;
+		transition: all 1s ease;
+		transition-duration:1.5s;
+	}
+}
+
+#wrapper.--typeScrollAction.active{
+	@include s.media(m){
+		opacity: 1;
+	}
+}
+
+/* .--typeScrollAction.--typeFromLeft 右から現れるスクロールアクション*/
+
+.--typeScrollAction.--typeFromLeft{
+	@include s.media(m){
+		transform: translateX(-100px);
+  		opacity: 0;
+		transition: all 1s ease;
+		transition-duration:1.5s;
+	}
+}
+
+.--typeScrollAction.--typeFromLeft.active{
+	@include s.media(m){
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+/* .--typeScrollAction.--typeFromRight 左から現れるスクロールアクション */
+
+.--typeScrollAction.--typeFromRight{
+	@include s.media(m){
+		transform: translateX(100px);
+  		opacity: 0;
+		transition: all 1s ease;
+		transition-duration:1.5s;
+	}
+}
+
+.--typeScrollAction.--typeFromRight.active{
+	@include s.media(m){
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+
+/* .--typeScrollFadeIn 効果を遅らせる */
+
+.--typeScrollFadeIn{
+	.homeAboutBox__pointBox >div{
+		@include s.media(m){
+			transform: translateY(100px);
+			opacity: 0;
+			transition: all 1s ease;
+			transition-duration:1.5s;
+		}
+	}
+	&.active .homeAboutBox__pointBox >div{
+		@include s.media(m){
+			transform: translateY(0);
+			opacity: 1;
+		}
+		&:nth-child(1){@include s.media(m){transition-delay:  0s;}}
+		&:nth-child(2){@include s.media(m){transition-delay:0.3s;}}
+		&:nth-child(3){@include s.media(m){transition-delay:0.6s;}}
+	}
+	.swiper-slide{
+		@include s.media(m){
+			transform: translateY(100px);
+			opacity: 0;
+			transition: all 1s ease;
+			transition-duration:1.5s;
+		}
+	}
+	&.active .swiper-slide{
+		@include s.media(m){
+			transform: translateY(0);
+			opacity: 1;
+		}
+		&:nth-child(1){@include s.media(m){transition-delay:  0s;}}
+		&:nth-child(2){@include s.media(m){transition-delay:0.3s;}}
+		&:nth-child(3){@include s.media(m){transition-delay:0.6s;}}
+	}
+}
+
+
+.--typeScrollAction{
+	.mainVisual__bg{
+		@include s.media(m){
+			transform: translateX(+100px);
+			opacity: 0;
+			transition: all 1s ease;
+			transition-duration:1s;
+		}
+	}
+	&.active .mainVisual__bg{
+		@include s.media(m){
+			transform: translateX(0);
+			opacity: 1;
+		}
+	}
+
+	.mainVisual__copy{
+		@include s.media(m){
+			transform: translateX(-10em);
+			opacity: 0;
+			transition: all 1s ease;
+			transition-duration:1.5s;
+		}
+	}
+	&.active .mainVisual__copy{
+		@include s.media(m){
+			transform: translateX(0);
+			opacity: 1;
+			transition-delay:0.3s;
+		}
+	}
+
+	.mainVisual__car{
+		@include s.media(m){
+			transform: translateX(+10em);
+			opacity: 0;
+			transition: all 1s ease;
+			transition-duration:1.5s;
+		}
+	}
+	&.active .mainVisual__car{
+		@include s.media(m){
+			transform: translateX(0);
+			opacity: 1;
+			transition-delay:0.9s;
+		}
+	}
+
+	.mainVisual__carName{
+		@include s.media(m){
+			transform: translateX(-10em);
+			opacity: 0;
+			transition: all 1s ease;
+			transition-duration:1.5s;
+		}
+	}
+	&.active .mainVisual__carName{
+		@include s.media(m){
+			transform: translateX(0);
+			opacity: 1;
+			transition-delay:1.2s;
+		}
+	}
+
+	.mainVisual__manufacturer,
+	.mainVisual__carPerson{
+		@include s.media(m){
+			opacity: 0;
+			transition: all 1s ease;
+			transition-duration:1.5s;
+		}
+	}
+	&.active .mainVisual__manufacturer,
+	&.active .mainVisual__carPerson{
+		@include s.media(m){
+			opacity: 1;
+			transition-delay:1.5s;
+		}
+	}
+
+	.mainVisual__person,
+	.mainVisual__contactBox{
+		@include s.media(m){
+			opacity: 0;
+			transition: all 1s ease;
+			transition-duration:1s;
+		}
+	}
+	&.active .mainVisual__person,
+	&.active .mainVisual__contactBox{
+		@include s.media(m){
+			opacity: 1;
+			transition-delay:2s;
+		}
+	}
+
+	&.carModelNavi{
+		@include s.media(m){
+			opacity: 0;
+			transition: all 1s ease;
+			transition-duration:1s;
+		}
+	}
+	&.active.carModelNavi{
+		@include s.media(m){ opacity: 1; }
+	}
+	.carModelNavi__button{
+		@include s.media(m){
+			opacity: 0;
+			transition: all 1s ease;
+			transition-duration:1s;
+		}
+	}
+	&.active .carModelNavi__button{
+		@include s.media(m){ opacity: 1; }
+		&:nth-child(1){@include s.media(m){transition-delay:0s;}}
+		&:nth-child(2){@include s.media(m){transition-delay:0.3s;}}
+		&:nth-child(3){@include s.media(m){transition-delay:0.6s;}}
+		&:nth-child(4){@include s.media(m){transition-delay:0.9s;}}
+		&:nth-child(5){@include s.media(m){transition-delay:1.2s;}}
+		&:nth-child(6){@include s.media(m){transition-delay:1.5s;}}
+	}
+
+	&.homeNewsBox{
+		@include s.media(m){
+			transform: translateX(-10em);
+			opacity: 0;
+			transition: all 1s ease;
+			transition-duration:1s;
+		}
+	}
+	&.active.homeNewsBox{
+		@include s.media(m){ transform: translateX(0); opacity: 1; }
+	}
+
+	&.homeStockBox{
+		@include s.media(m){
+			opacity: 0;
+			transition: all 1s ease;
+			transition-duration:1s;
+		}
+		.inBase__inner::before,
+		.inBase__inner::after{
+			@include s.media(m){
+				transform: translateX(-10em);
+				opacity: 0;
+				transition: all 1s ease;
+				transition-duration:1s;
+			}
+		}
+		.button--type01,
+		.button--type02{
+			@include s.media(m){
+				opacity: 0;
+				transition: all 1s ease;
+				transition-duration:1s;
+			}
+		}
+	}
+	&.active.homeStockBox{
+		@include s.media(m){ opacity: 1; }
+		.inBase__inner::before,
+		.inBase__inner::after{
+			@include s.media(m){
+				transform: translateX(0);
+				opacity: 1;
+			}
+		}
+		.button--type01,
+		.button--type02{
+			@include s.media(m){
+				opacity: 1;
+				transition-delay:0.9s;
+			}
+		}
+	}
+	.sliderBox--typeBasic.--typeStock .swiper-slide .homeStockBox__list{
+		@include s.media(m){
+			opacity: 0;
+			transition: all 1s ease;
+			transition-duration:1s;
+		}
+	}
+	&.active .sliderBox--typeBasic.--typeStock .swiper-slide{
+		.homeStockBox__list{@include s.media(m){ opacity: 1; }}
+		&:nth-child(1) .homeStockBox__list{@include s.media(m){transition-delay:0s;}}
+		&:nth-child(2) .homeStockBox__list{@include s.media(m){transition-delay:0.3s;}}
+		&:nth-child(3) .homeStockBox__list{@include s.media(m){transition-delay:0.6s;}}
+	}
+
+	&.accordionBox--typeCarModel::before{
+		@include s.media(m){
+			opacity: 0;
+			transition: all 1s ease;
+			transition-duration:1s;
+			margin-right:-100em;
+		}
+	}
+	&.active.accordionBox--typeCarModel::before{
+		@include s.media(m){
+			opacity: 1;
+			margin-right:0;
+		}
+	}
+	.homeServiceCarModelBox__inner,
+	.homeServiceCarModelBox__image,
+	.homeServiceCarModelBox__information,
+	.swiper-slide .homeServiceCarModelBox__Stock,
+	.homeServiceCarModelBox__inner .button--type01{
+		@include s.media(m){
+			opacity: 0;
+			transition: all 1s ease;
+			transition-duration:1s;
+		}
+	}
+	.homeServiceCarModelBox__inner::after {@include s.media(m){margin-left: -40em;}}
+	&.active .homeServiceCarModelBox__inner,
+	&.active .homeServiceCarModelBox__image,
+	&.active .homeServiceCarModelBox__information,
+	&.active .swiper-slide .homeServiceCarModelBox__Stock,
+	&.active .homeServiceCarModelBox__inner .button--type01{
+		@include s.media(m){
+			opacity: 1;
+		}
+	}
+	&.active .homeServiceCarModelBox__inner {@include s.media(m){transition-delay:0s;}}
+	&.active .homeServiceCarModelBox__image {@include s.media(m){transition-delay:0.3s;}}
+	&.active .homeServiceCarModelBox__information {@include s.media(m){transition-delay:0.6s;}}
+	&.active .swiper-slide {
+		&:nth-child(1) .homeServiceCarModelBox__Stock{@include s.media(m){transition-delay:0.9s;}}
+		&:nth-child(2) .homeServiceCarModelBox__Stock{@include s.media(m){transition-delay:1.2s;}}
+		&:nth-child(3) .homeServiceCarModelBox__Stock{@include s.media(m){transition-delay:1.5s;}}
+	}
+	&.active .homeServiceCarModelBox__inner .button--type01 {@include s.media(m){transition-delay:1.5s;}}
+	&.active .homeServiceCarModelBox__inner .homeServiceCarModelBox__information .button--type01 {@include s.media(m){transition-delay:0.6s;}}
+
+	&.active.accordionBox--typeCarModel:nth-child(even) .homeServiceCarModelBox__image {@include s.media(m){transition-delay:0.6s;}}
+	&.active.accordionBox--typeCarModel:nth-child(even) .homeServiceCarModelBox__information {@include s.media(m){transition-delay:0.3s;}}
+	&.active.accordionBox--typeCarModel:nth-child(even) .swiper-slide {
+		&:nth-child(1) .homeServiceCarModelBox__Stock{@include s.media(m){transition-delay:1.2s;}}
+		&:nth-child(2) .homeServiceCarModelBox__Stock{@include s.media(m){transition-delay:1.5s;}}
+		&:nth-child(3) .homeServiceCarModelBox__Stock{@include s.media(m){transition-delay:1.8s;}}
+	}
+	&.active.accordionBox--typeCarModel:nth-child(even) .homeServiceCarModelBox__inner .button--type01 {@include s.media(m){transition-delay:0.9s;}}
+	&.active.accordionBox--typeCarModel:nth-child(even) .homeServiceCarModelBox__inner .homeServiceCarModelBox__information .button--type01 {@include s.media(m){transition-delay:0.3s;}}
+	
+	&.homeWorksBox,
+	&.homeBlogBox{
+		@include s.media(m){
+			opacity: 0;
+			transition: all 1s ease;
+			transition-duration:1s;
+		}
+		.button--type01{
+			@include s.media(m){
+				opacity: 0;
+				transition: all 1s ease;
+				transition-duration:1s;
+			}
+		}
+	}
+	&.active.homeWorksBox,
+	&.active.homeBlogBox{
+		@include s.media(m){ opacity: 1; }
+		.button--type01{
+			@include s.media(m){ opacity: 1; transition-delay:1.2s;}
+		}
+	}
+	.sliderBox--typeChangeSlide .swiper-slide .homeWorksBox__works{
+		@include s.media(m){
+			opacity: 0;
+			transition: all 1s ease;
+			transition-duration:1s;
+		}
+	}
+	&.active .sliderBox--typeChangeSlide .swiper-slide{
+		.homeWorksBox__works{@include s.media(m){opacity: 1; }}
+		&:nth-child(1) .homeWorksBox__works{@include s.media(m){transition-delay:0.3s;}}
+		&:nth-child(2) .homeWorksBox__works{@include s.media(m){transition-delay:0.6s;}}
+		&:nth-child(3) .homeWorksBox__works{@include s.media(m){transition-delay:0.9s;}}
+	}
+
+	&.homeReasonBox .homeReasonBox__inner,
+	&.homeReasonBox .inBase__inner::before,
+	&.homeReasonBox .homeReasonBox__groupImage{
+		@include s.media(m){
+			opacity: 0;
+			transition: all 1s ease;
+			transition-duration:1s;
+		}
+	}
+	&.homeReasonBox .inBase__inner::before{ @include s.media(m){ margin-right:-100em; }}
+	&.active.homeReasonBox .homeReasonBox__inner{ @include s.media(m){ opacity: 1; transition-delay:0.3s;}}
+	&.active.homeReasonBox .inBase__inner::before{ @include s.media(m){ opacity: 1; transition-delay:0.6s; margin-right:0;}}
+	&.active.homeReasonBox .homeReasonBox__groupImage{ @include s.media(m){ opacity: 1; transition-delay:0.6s; }}
+	
+	&.homeVoiceBox{
+		@include s.media(m){
+			opacity: 0;
+			transition: all 1s ease;
+			transition-duration:1s;
+		}
+	}
+	&.active.homeVoiceBox{
+		@include s.media(m){ opacity: 1; }
+	}
+
+	&.homeLinkBox .homeLinkBox__button,
+	&.bannerAppraisal{
+		@include s.media(m){
+			opacity: 0;
+			transition: all 1s ease;
+			transition-duration:1s;
+		}
+	}
+	&.active.homeLinkBox .homeLinkBox__button{
+		@include s.media(m){ opacity: 1; }
+		&:nth-child(1){@include s.media(m){transition-delay:0s;}}
+		&:nth-child(2){@include s.media(m){transition-delay:0.3s;}}
+		&:nth-child(3){@include s.media(m){transition-delay:0.6s;}}
+	}
+	&.active.bannerAppraisal{
+		@include s.media(m){
+			opacity: 1;
+			transition-delay:0.9s;
+		}
+	}
+
+	&.pageCompleteCarBox{
+		@include s.media(m){
+			opacity: 0;
+			transition: all 1s ease;
+			transition-duration:1s;
+		}
+	}
+	&.active.pageCompleteCarBox{
+		@include s.media(m){
+			opacity: 1;
+		}
+	}
+	.pageCompleteCarBox__titleBox{
+		@include s.media(m){
+			opacity: 0;
+			transition: all 1s ease;
+			transition-duration:1s;
+		}
+	}
+	&.active .pageCompleteCarBox__titleBox{
+		@include s.media(m){
+			opacity: 1;
+			transition-delay:0.3s;
+		}
+	}
+	.pageCompleteCarBox__contents{
+		@include s.media(m){
+			opacity: 0;
+			transition: all 1s ease;
+			transition-duration:1s;
+		}
+	}
+	&.active .pageCompleteCarBox__contents{
+		@include s.media(m){
+			opacity: 1;
+			transition-delay:0.3s;
+		}
+	}
+	&.pageCompleteCarBox__inner .pageCompleteCarBox__contents,
+	&.pageCompleteCarBox__inner .pageCompleteCarBox__image{
+		@include s.media(m){
+			opacity: 0;
+			transition: all 1s ease;
+			transition-duration:1s;
+		}
+	}
+	&.active.pageCompleteCarBox__inner .pageCompleteCarBox__contents{ @include s.media(m){ opacity: 1; transition-delay:0.3s; }}
+	&.active.pageCompleteCarBox__inner .pageCompleteCarBox__image{ @include s.media(m){ opacity: 1; transition-delay:0.6s; }}
+
+	&.pageCustomPartsBox{
+		@include s.media(m){
+			opacity: 0;
+			transition: all 1s ease;
+			transition-duration:1s;
+		}
+	}
+	&.active.pageCustomPartsBox{
+		@include s.media(m){
+			opacity: 1;
+		}
+	}
+
+	.accordion--typeCustomParts{
+		@include s.media(m){
+			opacity: 0;
+			transition: all 1s ease;
+			transition-duration:1s;
+		}
+	}
+	&.active .accordion--typeCustomParts{
+		@include s.media(m){
+			opacity: 1;
+		}
+		&:nth-child(1){@include s.media(m){transition-delay:0s;}}
+		&:nth-child(2){@include s.media(m){transition-delay:0.3s;}}
+		&:nth-child(3){@include s.media(m){transition-delay:0.6s;}}
+		&:nth-child(4){@include s.media(m){transition-delay:0.9s;}}
+	}
+}
+
+.--typeScrollSlide{
+	&.inBase__inner.--bgSlideRight::after{
+		@include s.media(m){
+			margin-right:-100em;
+			opacity: 0;
+			transition: all 1s ease;
+			transition-duration:1s;
+		}
+	}
+	&.active.inBase__inner.--bgSlideRight::after{
+		@include s.media(m){
+			margin-right:0;
+			opacity: 1;
+		}
+	}
+}
+
+
+/* フェードモーション用アニメーション */
+
+@keyframes fadeAnime{
+  from { opacity: 0; }
+  to { opacity: 1;; }
+}
+
+@keyframes fadeUpAnime{
+  from { transform: translateY(100px); }
+  to { transform: translateY(0); }
+}
+
+@keyframes fadeDownAnime{
+  from { transform: translateY(-100px); }
+  to { transform: translateY(0); }
+}
+
+
+
+@-webkit-keyframes blurAnime {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+      opacity: 0;
+      -webkit-filter: blur(300px);
+              filter: blur(300px);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      opacity: 1;
+      -webkit-filter: blur(0);
+              filter: blur(0);
+    }
+}
+
+@keyframes blurAnime {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+      opacity: 0;
+      -webkit-filter: blur(300px);
+              filter: blur(300px);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      opacity: 1;
+      -webkit-filter: blur(0);
+              filter: blur(0);
+    }
+}

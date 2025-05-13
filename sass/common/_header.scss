@@ -1,0 +1,232 @@
+@use "../_setting" as s;
+
+#header {
+  position: relative;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background: #FFF;
+  display: block;
+  z-index: 5;
+  .inBase {
+    position: relative;
+  }
+  .fullView{
+    background:#FFF;
+  }
+}
+
+#wrapper .header{
+  &__headBox {
+    display: block;
+    border-bottom: s.$colorType02 solid 2px;
+    background:s.$colorType02;
+	padding:1em 0 0.5em 1em;
+    @include s.media(m){
+      background:none;
+	padding:0;
+    }
+	&.--typeCar_every,&.--typeCar_hiace,&.--typeCar_hijet,&.--typeCar_probox,&.--typeCar_jimny,&.--typeCar_hustler{
+	    //border-bottom: #FFF solid 2px;
+	    background:#FFF2;
+	    @include s.media(m){
+      		background:none;
+   		 border-bottom: s.$colorType02 solid 2px;
+	    }
+	}
+  }
+  &__siteTitleBox {
+    width: 100%;
+    height: 5.5em;
+    display: block;
+    margin-bottom: 0.5em;
+    margin-left: -1em;
+    @include s.media(m){
+      width: 14em;
+      height: 2.5em;
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin-bottom: 0;
+      margin-left: 0;
+    }
+    @include s.media(xxl){
+      width: 22.5em;
+      height: 5.4em;
+      top: 0;
+      left: -22.5em;
+    }
+    a{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      line-height: 1.7;
+	position:relative;
+	z-index:1;
+	&::before{
+    		@include s.media(xxl){
+			content:"";
+			background:#FFF;
+			width:100vw;
+			height:4em;
+			position:absolute;
+			bottom:-3.9em;
+			right:4.1em;
+			z-index:-1;
+		}
+	}
+	&::after{
+    		@include s.media(xxl){
+			content:"";
+			background:#FFF;
+			width:4.5em;
+			height:4em;
+			position:absolute;
+			bottom:-3.9em;
+			right:-0.3em;
+			z-index:-1;
+			clip-path: polygon(0 0,100% 0,0 100%);
+		}
+	}
+    }
+  }
+  &__siteTitle02 {
+    color: #FFF;
+    @include s.fontType01(Bold);
+    font-size: 0.8em;
+    padding-right: 1em;
+    line-height: 1.4;
+    @include s.media(m){
+      font-size: 0.875em;
+      color: s.$colorType02;
+    }
+    @include s.media(xxl){
+      line-height: 1.7;
+    }
+    span{
+      display: block;
+      font-size: 0.86em;
+    }
+  }
+  &__siteTitle {
+    width: 5em;
+    margin-top: 0.5em;
+    @include s.media(m){
+        width: 12em;
+        margin-top: 0.5em;
+    }
+    @include s.media(xxl){
+      width: 5.9em;
+        margin-top: 3em;
+    }
+    img {
+      width: 100%;
+    }
+  }
+  &__naviHeadBox {
+    display: none;
+    @include s.media(m){
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+	align-items:center;
+	margin-bottom: 0.4em;
+	padding-top:0.2em;
+    }
+    img {
+      width: 100%;
+    }
+  }
+  &__btnCarsensor {
+    width: 5em;
+    display: block;
+    margin-right: 1em;
+    a {
+      opacity: 1;
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+  }
+  &__btnGoonet {
+    width: 3.75em;
+    display: block;
+    margin-right: 1em;
+    a {
+      opacity: 1;
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+  }
+  &__tel {
+    font-size: 1.375em;
+    position: relative;
+    padding-left: 1.3em;
+    margin-right: 1em;
+    span {
+      display: inline-block;
+      width: 0.8em;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      margin-top: -0.4em;
+    }
+  }
+  &__mail {
+    width: 14em;
+    height: 2.5em;
+    display: inline-block;
+    @include s.media(xxl){
+      width: 22.5em;
+      height: 5.4em;
+      position: absolute;
+      top: 0;
+      right: -22.5em;
+      display: block;
+    }
+    a{
+      width: 100%;
+      height: 2.5em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      background: s.$colorType02;
+      color: #FFF;
+      @include s.fontType01(Bold);
+      padding-left: 1.3em;
+      text-align: center;
+      line-height: 1.7;
+      letter-spacing: 0.1em;
+      @include s.media(xxl){
+        height: 5.4em;
+      }
+      &:hover {
+        background: #707070;
+      }
+      span {
+        display: inline-block;
+        width: 1.1em;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -0.4em;
+        margin-left: -5em;
+        @include s.media(xxl){
+          width: 1.3em;
+        }
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+#container #wrapper .header__mail a{
+        @include s.media(xxl){
+          height: 5.6em;
+        }
+}
