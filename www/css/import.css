@@ -9548,7 +9548,7 @@ a.over:hover {
 
 #wrapper .mainVisual {
   display: block;
-  background: #C4C4C4;
+  background: #c4c4c4;
 }
 #wrapper .mainVisual img {
   width: 100%;
@@ -9571,7 +9571,8 @@ a.over:hover {
 #wrapper .mainVisual.--carType02 .mainVisual__copy {
   background: #0083A2;
 }
-#wrapper .mainVisual.--carType02 .mainVisual__copy .mainVisual__copy__inner::before, #wrapper .mainVisual.--carType02 .mainVisual__copy .mainVisual__copy__inner::after {
+#wrapper .mainVisual.--carType02 .mainVisual__copy .mainVisual__copy__inner::before,
+#wrapper .mainVisual.--carType02 .mainVisual__copy .mainVisual__copy__inner::after {
   background: #0083A2;
 }
 #wrapper .mainVisual.--carType02 .mainVisual__carName span figure {
@@ -9589,7 +9590,8 @@ a.over:hover {
 #wrapper .mainVisual.--carType03 .mainVisual__copy {
   background: #A22E2E;
 }
-#wrapper .mainVisual.--carType03 .mainVisual__copy .mainVisual__copy__inner::before, #wrapper .mainVisual.--carType03 .mainVisual__copy .mainVisual__copy__inner::after {
+#wrapper .mainVisual.--carType03 .mainVisual__copy .mainVisual__copy__inner::before,
+#wrapper .mainVisual.--carType03 .mainVisual__copy .mainVisual__copy__inner::after {
   background: #A22E2E;
 }
 #wrapper .mainVisual.--carType03 .mainVisual__carName span figure {
@@ -9607,7 +9609,8 @@ a.over:hover {
 #wrapper .mainVisual.--carType04 .mainVisual__copy {
   background: #74777C;
 }
-#wrapper .mainVisual.--carType04 .mainVisual__copy .mainVisual__copy__inner::before, #wrapper .mainVisual.--carType04 .mainVisual__copy .mainVisual__copy__inner::after {
+#wrapper .mainVisual.--carType04 .mainVisual__copy .mainVisual__copy__inner::before,
+#wrapper .mainVisual.--carType04 .mainVisual__copy .mainVisual__copy__inner::after {
   background: #74777C;
 }
 @media print, screen and (min-width: 768px) {
@@ -9632,7 +9635,8 @@ a.over:hover {
 #wrapper .mainVisual.--carType05 .mainVisual__copy {
   background: #83A200;
 }
-#wrapper .mainVisual.--carType05 .mainVisual__copy .mainVisual__copy__inner::before, #wrapper .mainVisual.--carType05 .mainVisual__copy .mainVisual__copy__inner::after {
+#wrapper .mainVisual.--carType05 .mainVisual__copy .mainVisual__copy__inner::before,
+#wrapper .mainVisual.--carType05 .mainVisual__copy .mainVisual__copy__inner::after {
   background: #83A200;
 }
 #wrapper .mainVisual.--carType05 .mainVisual__carName span figure {
@@ -9658,7 +9662,8 @@ a.over:hover {
 #wrapper .mainVisual.--carType06 .mainVisual__copy {
   background: #DE6B40;
 }
-#wrapper .mainVisual.--carType06 .mainVisual__copy .mainVisual__copy__inner::before, #wrapper .mainVisual.--carType06 .mainVisual__copy .mainVisual__copy__inner::after {
+#wrapper .mainVisual.--carType06 .mainVisual__copy .mainVisual__copy__inner::before,
+#wrapper .mainVisual.--carType06 .mainVisual__copy .mainVisual__copy__inner::after {
   background: #DE6B40;
 }
 #wrapper .mainVisual.--carType06 .mainVisual__carName span figure {
@@ -9777,7 +9782,7 @@ a.over:hover {
   display: block;
   width: 85%;
   height: 65%;
-  background: #C4C4C4;
+  background: #c4c4c4;
   position: absolute;
   bottom: 0;
   right: -6%;
@@ -9823,7 +9828,7 @@ a.over:hover {
   position: absolute;
   top: 1.7em;
   right: 0;
-  background: #FFF;
+  background: #fff;
   padding: 0.3em 0.5em;
   display: none;
 }
@@ -9903,7 +9908,7 @@ a.over:hover {
   font-weight: 700;
   font-style: normal;
   display: block;
-  color: #FFF;
+  color: #fff;
   letter-spacing: 0.1em;
 }
 #wrapper .mainVisual__copy span:nth-child(1) {
@@ -9929,7 +9934,7 @@ a.over:hover {
   font-style: normal;
   display: block;
   font-size: 0.81em;
-  color: #FFF;
+  color: #fff;
   letter-spacing: 0.1em;
   position: relative;
   padding: 0.5em 0 2em 0;
@@ -9944,7 +9949,7 @@ a.over:hover {
   display: block;
   width: 95%;
   height: 1px;
-  background: #FFF;
+  background: #fff;
   position: absolute;
   top: 0;
   left: 0;
@@ -9960,7 +9965,7 @@ a.over:hover {
   position: absolute;
   bottom: 1.6em;
   left: -6%;
-  background: #FFF;
+  background: #fff;
 }
 @media print, screen and (min-width: 768px) {
   #wrapper .mainVisual__carName {
@@ -9979,7 +9984,7 @@ a.over:hover {
     display: block;
     width: 50vw;
     height: 100%;
-    background: #C4C4C4;
+    background: #c4c4c4;
     position: absolute;
     top: 0;
     left: 0.1em;
@@ -9992,7 +9997,7 @@ a.over:hover {
     display: block;
     width: 5.2em;
     height: 100%;
-    background: #C4C4C4;
+    background: #c4c4c4;
     -webkit-clip-path: polygon(0 0, 100% 0, 0 100%);
             clip-path: polygon(0 0, 100% 0, 0 100%);
     position: absolute;
@@ -10037,7 +10042,7 @@ a.over:hover {
     display: block;
     width: 5.2em;
     height: 100%;
-    background: #FFF;
+    background: #fff;
     -webkit-clip-path: polygon(0 0, 100% 0, 0 100%);
             clip-path: polygon(0 0, 100% 0, 0 100%);
     position: absolute;
@@ -10096,7 +10101,7 @@ a.over:hover {
   border-radius: 1em 1em 0 0;
 }
 #wrapper .mainVisual__contactBox p {
-  color: #FFF;
+  color: #fff;
   text-align: center;
   font-family: "Noto Sans JP", serif;
   font-optical-sizing: auto;
@@ -10112,7 +10117,7 @@ a.over:hover {
 }
 #wrapper .mainVisual__contactButton a {
   display: block;
-  background: #FFF;
+  background: #fff;
   font-family: "Noto Sans JP", serif;
   font-optical-sizing: auto;
   font-weight: 700;
@@ -10124,7 +10129,7 @@ a.over:hover {
   position: relative;
 }
 #wrapper .mainVisual__contactButton a:hover {
-  background: #EEE;
+  background: #eee;
 }
 #wrapper .mainVisual__contactButton a span {
   display: inline-block;
@@ -10185,7 +10190,7 @@ a.over:hover {
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  background: #FFF;
+  background: #fff;
   overflow: hidden;
 }
 #wrapper .carModelNavi__button a::before {
@@ -10209,7 +10214,7 @@ a.over:hover {
 }
 #wrapper .carModelNavi__button a > p {
   display: inline-block;
-  color: #FFF;
+  color: #fff;
   font-family: "Inter", serif;
   font-optical-sizing: auto;
   font-weight: 700;
@@ -10354,7 +10359,7 @@ a.over:hover {
   width: 112%;
   display: block;
   background: #0057A2;
-  color: #FFF;
+  color: #fff;
   font-family: "Noto Sans JP", serif;
   font-optical-sizing: auto;
   font-weight: 500;
@@ -10444,7 +10449,7 @@ a.over:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  color: #FFF;
+  color: #fff;
   line-height: 1.5;
 }
 @media print, screen and (min-width: 768px) {
@@ -10677,14 +10682,14 @@ a.over:hover {
 #wrapper .homeStockBox__list a {
   display: block;
   padding: 2em 0 0;
-  background: #FFF;
+  background: #fff;
   -webkit-box-shadow: 0px 0px 0.5em 0px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 0px 0.5em 0px rgba(0, 0, 0, 0.2);
   position: relative;
 }
 #wrapper .homeStockBox__list a:hover {
   color: #000;
-  background: #F7F7F7;
+  background: #f7f7f7;
   -webkit-box-shadow: 0px 0px 0.5em 0px rgba(0, 0, 0, 0);
           box-shadow: 0px 0px 0.5em 0px rgba(0, 0, 0, 0);
 }
@@ -10726,7 +10731,7 @@ a.over:hover {
 }
 #wrapper .homeStockBox__image img {
   width: 100%;
-  aspect-ratio: 3/2;
+  aspect-ratio: 4/3;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -10824,20 +10829,22 @@ a.over:hover {
 }
 #wrapper .homeStockBox__information table {
   border-collapse: separate;
-  border-top: #F2F1F0 solid 1px;
+  border-top: #f2f1f0 solid 1px;
 }
 @media print, screen and (min-width: 768px) {
   #wrapper .homeStockBox__information table {
     border-top: none;
   }
 }
-#wrapper .homeStockBox__information table tr th, #wrapper .homeStockBox__information table tr td {
+#wrapper .homeStockBox__information table tr th,
+#wrapper .homeStockBox__information table tr td {
   border: none;
   display: block;
   width: 100%;
 }
 @media print, screen and (min-width: 768px) {
-  #wrapper .homeStockBox__information table tr th, #wrapper .homeStockBox__information table tr td {
+  #wrapper .homeStockBox__information table tr th,
+#wrapper .homeStockBox__information table tr td {
     width: unset;
     display: table-cell;
   }
@@ -10847,19 +10854,19 @@ a.over:hover {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  color: #FFF;
+  color: #fff;
   background: #0057a2;
   padding: 0.4em 1em;
   min-width: 30%;
-  border-bottom: #F2F0F0 solid 1px;
-  border-left: #F2F0F0 solid 1px;
+  border-bottom: #f2f0f0 solid 1px;
+  border-left: #f2f0f0 solid 1px;
 }
 @media print, screen and (min-width: 768px) {
   #wrapper .homeStockBox__information table tr th {
     width: 30%;
     font-size: 1.1em;
-    border-bottom: #FFF solid 1px;
-    border-left: #FFF solid 1px;
+    border-bottom: #fff solid 1px;
+    border-left: #fff solid 1px;
   }
 }
 #wrapper .homeStockBox__information table tr td {
@@ -10868,16 +10875,16 @@ a.over:hover {
   font-weight: 400;
   font-style: normal;
   padding: 0.4em 1em;
-  background: #FFF;
-  border-bottom: #F2F1F0 solid 1px;
-  border-left: #F2F1F0 solid 1px;
-  border-right: #F2F0F0 solid 1px;
+  background: #fff;
+  border-bottom: #f2f1f0 solid 1px;
+  border-left: #f2f1f0 solid 1px;
+  border-right: #f2f0f0 solid 1px;
 }
 @media print, screen and (min-width: 768px) {
   #wrapper .homeStockBox__information table tr td {
-    background: #FFF;
-    border-bottom: #FFF solid 1px;
-    border-left: #FFF solid 1px;
+    background: #fff;
+    border-bottom: #fff solid 1px;
+    border-left: #fff solid 1px;
     border-right: none;
     font-size: 1.1em;
   }
@@ -10886,11 +10893,11 @@ a.over:hover {
   background: #0057a2;
 }
 #wrapper .homeStockBox__information table tr:nth-child(even) td {
-  background: #FFF;
+  background: #fff;
 }
 @media print, screen and (min-width: 768px) {
   #wrapper .homeStockBox__information table tr:nth-child(even) td {
-    background: #F0F5FC;
+    background: #f0f5fc;
   }
 }
 #wrapper .homeStockBox__information table:last-child td:last-child {
@@ -10906,7 +10913,8 @@ a.over:hover {
     font-size: 0.8em;
   }
 }
-#wrapper .homeStockBox__information table tr th, #wrapper .homeStockBox__information table tr td {
+#wrapper .homeStockBox__information table tr th,
+#wrapper .homeStockBox__information table tr td {
   display: table-cell;
 }
 #wrapper .homeStockBox__information table tr th {
@@ -10932,7 +10940,7 @@ a.over:hover {
   display: block;
   text-align: center;
   background: #0057A2;
-  color: #FFF;
+  color: #fff;
   position: relative;
   padding: 0.7em;
   -webkit-transition: all 0.3s ease;
@@ -10959,7 +10967,7 @@ a.over:hover {
   position: absolute;
   top: 0;
   right: 0;
-  color: #FFF;
+  color: #fff;
   font-size: 1.1em;
 }
 @media print, screen and (min-width: 768px) {
@@ -10990,7 +10998,7 @@ a.over:hover {
 }
 @media print, screen and (min-width: 768px) {
   #wrapper .homeStockBox.--carType01 .homeStockBox__information table tr:nth-child(even) td {
-    background: #FAFAFA;
+    background: #fafafa;
   }
 }
 @media print, screen and (min-width: 768px) {
@@ -11021,7 +11029,7 @@ a.over:hover {
 }
 @media print, screen and (min-width: 768px) {
   #wrapper .homeStockBox.--carType02 .homeStockBox__information table tr:nth-child(even) td {
-    background: #FAFAFA;
+    background: #fafafa;
   }
 }
 @media print, screen and (min-width: 768px) {
@@ -11052,7 +11060,7 @@ a.over:hover {
 }
 @media print, screen and (min-width: 768px) {
   #wrapper .homeStockBox.--carType03 .homeStockBox__information table tr:nth-child(even) td {
-    background: #FAFAFA;
+    background: #fafafa;
   }
 }
 @media print, screen and (min-width: 768px) {
@@ -11083,7 +11091,7 @@ a.over:hover {
 }
 @media print, screen and (min-width: 768px) {
   #wrapper .homeStockBox.--carType04 .homeStockBox__information table tr:nth-child(even) td {
-    background: #FAFAFA;
+    background: #fafafa;
   }
 }
 @media print, screen and (min-width: 768px) {
@@ -11114,7 +11122,7 @@ a.over:hover {
 }
 @media print, screen and (min-width: 768px) {
   #wrapper .homeStockBox.--carType05 .homeStockBox__information table tr:nth-child(even) td {
-    background: #FAFAFA;
+    background: #fafafa;
   }
 }
 @media print, screen and (min-width: 768px) {
@@ -11145,7 +11153,7 @@ a.over:hover {
 }
 @media print, screen and (min-width: 768px) {
   #wrapper .homeStockBox.--carType06 .homeStockBox__information table tr:nth-child(even) td {
-    background: #FAFAFA;
+    background: #fafafa;
   }
 }
 
@@ -11198,7 +11206,7 @@ a.over:hover {
   z-index: 1;
 }
 #wrapper .homeServiceCarModelBox__titleBox {
-  background: #74777C;
+  background: #74777c;
   display: block;
   padding: 2em 1em;
 }
@@ -11209,7 +11217,7 @@ a.over:hover {
 }
 #wrapper .homeServiceCarModelBox__title {
   font-size: 1.5em;
-  color: #FFF;
+  color: #fff;
   display: block;
   text-align: center;
   font-family: "Noto Sans JP", serif;
@@ -11230,7 +11238,7 @@ a.over:hover {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  color: #FFF;
+  color: #fff;
   letter-spacing: 0.1em;
 }
 #wrapper .homeServiceCarModelBox .inBase__inner {
@@ -11656,7 +11664,7 @@ a.over:hover {
   display: block;
   margin: 0 auto 1em;
   border: #666 solid 3px;
-  background: #DDD;
+  background: #ddd;
   position: relative;
 }
 @media print, screen and (min-width: 768px) {
@@ -11671,7 +11679,7 @@ a.over:hover {
   position: absolute;
   top: 0;
   left: 0;
-  background: #FFF;
+  background: #fff;
   padding: 0.3em 1em;
 }
 #wrapper .homeServiceCarModelBox__carName {
@@ -11749,7 +11757,7 @@ a.over:hover {
 #wrapper .homeServiceCarModelBox__information .button--type01 a {
   background: #666;
   border: none;
-  color: #FFF;
+  color: #fff;
   padding: 0.7em 2.5em;
   font-size: 0.9em;
 }
@@ -11794,7 +11802,7 @@ a.over:hover {
   width: 80%;
   background: #313131;
   border: none;
-  color: #FFF;
+  color: #fff;
   padding: 1em 2.5em;
 }
 @media print, screen and (min-width: 768px) {
@@ -11842,7 +11850,7 @@ a.over:hover {
   display: block;
   -webkit-box-shadow: 0px 0px 0.5em 0px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 0px 0.5em 0px rgba(0, 0, 0, 0.2);
-  background: #FFF;
+  background: #fff;
   position: relative;
   padding-bottom: 0.3em;
   overflow: hidden;
@@ -11983,7 +11991,7 @@ a.over:hover {
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
-  color: #FFF;
+  color: #fff;
 }
 @media print, screen and (min-width: 768px) {
   #wrapper .homeServiceCarModelBox__Stock p:nth-child(4) {
@@ -12009,7 +12017,7 @@ a.over:hover {
   display: block;
   text-align: center;
   background: #666;
-  color: #FFF;
+  color: #fff;
   position: relative;
   padding: 0.7em;
   -webkit-transition: all 0.3s ease;
@@ -12115,7 +12123,7 @@ a.over:hover {
   }
 }
 #wrapper .accordion--typeCarModel__icon div {
-  background: #FFF;
+  background: #fff;
   width: 100%;
   height: 100%;
   position: absolute;
@@ -12168,7 +12176,7 @@ a.over:hover {
   z-index: 2;
 }
 #wrapper .homeWorksBox__title {
-  color: #FFF;
+  color: #fff;
   font-size: 1.5em;
   font-family: "Noto Sans JP", serif;
   font-optical-sizing: auto;
@@ -12274,21 +12282,21 @@ a.over:hover {
 }
 #wrapper .homeWorksBox__works a {
   display: block;
-  background: #FFF;
+  background: #fff;
   padding: 1.5em;
   line-height: 1.7;
   position: relative;
 }
 #wrapper .homeWorksBox__works a:hover {
   color: #000;
-  background: #F7F7F7;
+  background: #f7f7f7;
 }
 #wrapper .homeWorksBox__works a:hover img {
   -webkit-transform: scale(1.1, 1.1);
           transform: scale(1.1, 1.1);
 }
 #wrapper .homeWorksBox__works a:hover .homeWorksBox__type span:nth-child(1)::before {
-  background: #F7F7F7;
+  background: #f7f7f7;
 }
 #wrapper .homeWorksBox__works a figure {
   overflow: hidden;
@@ -12329,7 +12337,7 @@ a.over:hover {
   font-weight: 700;
   font-style: normal;
   background: #666;
-  color: #FFF;
+  color: #fff;
   padding: 0.3em 1em;
   position: relative;
 }
@@ -12338,7 +12346,7 @@ a.over:hover {
   display: block;
   width: 2.5em;
   height: 101%;
-  background: #FFF;
+  background: #fff;
   -webkit-clip-path: polygon(0 100%, 100% 0, 100% 100%);
           clip-path: polygon(0 100%, 100% 0, 100% 100%);
   position: absolute;
@@ -12391,7 +12399,7 @@ a.over:hover {
   font-style: normal;
   display: inline-block;
   background: rgba(0, 0, 0, 0.4);
-  color: #FFF;
+  color: #fff;
   padding: 0.2em 0.6em;
 }
 #wrapper .homeWorksBox__type02 .list--parts_category {
@@ -12438,7 +12446,7 @@ a.over:hover {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  border-top: #DDD solid 1px;
+  border-top: #ddd solid 1px;
   line-height: 1.5em;
   color: #666;
 }
@@ -12558,7 +12566,7 @@ a.over:hover {
 #wrapper .homeReasonBox .button--type01 a {
   background: #0057A2;
   border: none;
-  color: #FFF;
+  color: #fff;
   padding: 0.8em 4em;
 }
 #wrapper .homeReasonBox .button--type01 a::before {
@@ -12587,7 +12595,7 @@ a.over:hover {
   position: relative;
 }
 #wrapper .homeReasonBox__groupImage__inner > p {
-  color: #FFF;
+  color: #fff;
   font-family: "Noto Sans JP", serif;
   font-optical-sizing: auto;
   font-weight: 700;
@@ -12693,7 +12701,7 @@ a.over:hover {
   }
 }
 #wrapper .homeVoiceBox__inner {
-  background: #ADD3E2;
+  background: #add3e2;
   border: #0057A2 solid 1px;
   border-radius: 2em;
   padding: 2em 1em 0;
@@ -12783,7 +12791,7 @@ a.over:hover {
       -ms-flex-align: center;
           align-items: center;
   background: #313131;
-  color: #FFF;
+  color: #fff;
   padding: 1.2em 1em 1.2em 0.5em;
   line-height: 1.7;
   position: relative;
@@ -12869,7 +12877,7 @@ a.over:hover {
 #wrapper .bannerAppraisal a > p {
   width: 100%;
   text-align: center;
-  color: #FFF;
+  color: #fff;
   font-family: "Noto Sans JP", serif;
   font-optical-sizing: auto;
   font-weight: 700;
@@ -12893,7 +12901,7 @@ a.over:hover {
   z-index: 1;
 }
 #wrapper .homeBlogBox__title {
-  color: #FFF;
+  color: #fff;
   font-size: 1.5em;
   font-family: "Noto Sans JP", serif;
   font-optical-sizing: auto;
@@ -12932,12 +12940,12 @@ a.over:hover {
 }
 #wrapper .homeBlogBox__article a {
   display: block;
-  background: #FFF;
+  background: #fff;
   line-height: 1.7;
 }
 #wrapper .homeBlogBox__article a:hover {
   color: #000;
-  background: #F7F7F7;
+  background: #f7f7f7;
 }
 #wrapper .homeBlogBox__article a:hover img {
   -webkit-transform: scale(1.1, 1.1);
